@@ -57,13 +57,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 ### Names of people you have worked with on this assignment
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
-* Like this: 
-* **Jackie Cohen (jczetta)**
-* Yea-Ree Chang (cyearee)
-* Ruchi Ookalkar (ruchido)
-* Innocent Obi (innoobi)
-* Zhen Wang (alejwang)
-* etc.
+* **Xinyue Huang (heybigjoy)**
 
 ## Questions & code instructions
 
@@ -78,41 +72,51 @@ Some JavaScript code
 ```
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
-- Two slashes will be needed before the comment. See example below.
+
+Two slashes will be needed before the comment. See example below.
 ```js
 // This is a comment in JavaScript.
 ```
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
+
 Open the webpage, and open the console, either through "inspect element" or through "Developer Tool". You can put in JavaScript Command into the console and run the code
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
+
 alert() and console.log() The first one will show as an message in a alert box when you run the code, the second one will not show directly, but will show in the console, which will work more for debugging purposes
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
+
 I will need to comment out the alert("hello")
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
+
 In the displayInformation() function, the selector for h1, I will need to replace the innerHTML `A name` with my own name
 
 * **What does the word `document` represent in this code? Explain briefly.**
 
 * **https://www.w3schools.com/js/js_htmldom_document.asp**
+
 It means my webpage, so if I want to access any element in my HTML while writing JavaScript, I will need to use the `document` object first
 
 * **What is happening in line 12 ( 
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
+
 In this line, it assigns the element of id `items` with the number of the elements in the list in HTML.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+
 It will be transparent as default, which is usually be seen white
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
+
 Because in the CSS code, all the `<p>` elements were specified by background color of grey and the border of white. In order to change them, I will need to just change the CSS code, of the `<p>` element, change the background-color property to the color I want.
 
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+
 I edit the HTML code to`<li oncopy="copyFunction()">McGill University</li>` in order to call the copyFunction when it was copied. This function will allow the text to be shown. Then I change the text in the function, from `Go Blue` to `O Canada`. Then I moved `<div>` with the id `cheer` from above the button to underneath, to make it appear at the bottom of the page.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
@@ -138,14 +142,17 @@ The function handleClick will show a alert box of hello when you call the functi
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
+
 In the CSS style code part, the message was specified with different colors for different classes, when error it is red, when good it is blue.  
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
 It validates if the useer's input is all letters.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
+
 In JavaScript, the condition will need the parentheses around it and the code under that condition will be inside the braces.
 For example:
+
 ```js
 if (condition){
     //the code to execute under this condition
@@ -153,6 +160,7 @@ if (condition){
 	//the code to execute under this condition
 }
 ```
+
 In Python, the syntax will be easier: `if condition:` and the indentation to specify the code under the condition. 
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
